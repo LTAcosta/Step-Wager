@@ -1,0 +1,60 @@
+/* CSS Document */
+
+/* Space out content a bit */
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #1ABC9C;
+}
+
+#main {
+	padding-top: 15px;
+	padding-right: 0px;
+	padding-left: 0px;
+	background-color: #FFFFFF;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.content {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 20px;
+}
+
+.bottom-menu {
+	margin-top: 20px;
+	padding: 0px;
+}
+
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  padding-bottom: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 41px;
+}
+
+/* Customize container */
+@media (min-width: 992px) {
+  .container {
+    max-width: 970px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+	border-radius: 6px;
+  }
+  .bottom-menu {
+	border-radius: 0px 0px 6px 6px;
+  }
+}
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
