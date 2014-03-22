@@ -1,12 +1,5 @@
 /* CSS Document */
 
-/* Space out content a bit */
-body {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  background-color: #1ABC9C;
-}
-
 #main {
 	padding-top: 15px;
 	padding-right: 0px;
@@ -14,8 +7,73 @@ body {
 	background-color: #FFFFFF;
 }
 
+.jumbotron {
+	margin-right: 0px;
+	margin-left: 0px;
+	background-color: #3498DB;
+}
+
+#welcome {
+  color: #FFFFFF;
+  vertical-align: middle;
+  height: 100%;
+  padding-bottom: 15px;
+}
+
+#welcome h3 {
+  margin-top: 0px;
+}
+
+.login {
+	background-color: #FFFFFF;
+	padding: 15px;
+	border-radius: 6px;
+}
+
+#forgotpass {
+  padding-left: 0px;
+  text-align:right;
+}
+
+.features {
+  padding: 15px;
+  height: 130px;
+}
+
+.featureimg {
+	line-height: 100px;
+}
+
+.features img {
+  display: inline-block;
+  max-height: 100px;
+  max-width: 100px;
+  vertical-align: middle;
+}
+
+.regsteps {
+  padding: 15px 15px 0px 15px;
+  height: 125px;
+}
+
+.regstepsimg {
+  line-height: 80px;
+  background-color: #FFFFFF;
+  border-radius: 6px;
+  padding: 15px;
+  width: auto;
+}
+
+.regsteps img {
+  display: inline-block;
+  max-height: 80px;
+  max-width: 80px;
+  vertical-align: middle;
+}
+
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
+.footer,
 .content {
   padding-right: 15px;
   padding-left: 15px;
@@ -27,17 +85,28 @@ body {
   margin-bottom: 20px;
 }
 
+.footer {
+	border-top: 1px solid #e5e5e5;
+	margin-top: 20px;
+}
+
 .bottom-menu {
 	margin-top: 20px;
 	padding: 0px;
 }
 
 /* Make the masthead heading the same height as the navigation */
-.header h3 {
-  padding-bottom: 20px;
+.header h1 {
+  color: #E74C3C;
+  padding-bottom: 15px;
   margin-top: 0;
   margin-bottom: 0;
   line-height: 41px;
+  text-align: center;
+}
+
+.header ul {
+  padding-bottom: 15px;
 }
 
 /* Customize container */
@@ -45,13 +114,31 @@ body {
   .container {
     max-width: 970px;
   }
+  
+  #welcome {
+	padding-bottom: 0px;  
+  }
 }
 @media (min-width: 768px) {
   .container {
 	border-radius: 6px;
   }
-  .bottom-menu {
-	border-radius: 0px 0px 6px 6px;
+  
+  body {
+	background-color: #e5e5e5;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .header h1 {
+	text-align: left;  
+  }
+}
+
+@media (max-width: 475px) {
+  .jumbotron {
+    padding-left: 0px;
+	padding-right: 0px;  
   }
 }
 

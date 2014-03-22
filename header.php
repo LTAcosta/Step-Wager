@@ -23,12 +23,16 @@
   </head>
   <body>
     <div id="main" class="container">
-      <div class="header">
-        <ul class="nav nav-pills pull-right">
-          <li><a href="index.php">Home</a></li>
-          <li><a href="wagers.php">Wagers</a></li>
-          <li><a href="leaderboard.php">Leaderboards</a></li>
-          <li><a href="account.php">My Account</a></li>
-        </ul>
-        <h3 class="text-muted">Step Wager</h3>
+      <div class="header row">
+	    <div class="col-md-5">
+		  <h1>Step Wager</h1>
+		</div>
+	    <div class="col-md-7">
+          <ul class="nav nav-pills nav-justified">
+            <li><a href="index.php">Home</a></li>
+            <li><a href="wagers.php">Wagers</a></li>
+            <li><a href="leaderboard.php">Leaderboards</a></li>
+            <li><a href="account.php">Profile</a></li>
+          </ul>
+		</div>
       </div>
