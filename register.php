@@ -1,4 +1,73 @@
-<?php include 'header.php' ?>
+<?php
+include_once 'functions.php';
+include 'header.php';
+
+if($isUserLoggedIn){
+    header('Location: index.php');
+    echo "<script>window.location = 'index.php'</script>";
+    exit;
+}
+
+// Reset errors and success messages
+$errors = array();
+
+// Register attempt
+if(isset($_POST['registerSubmit']) && $_POST['registerSubmit'] == 'true'){
+    $registerName = trim($_POST['username']);
+    $registerEmail = trim($_POST['email']);
+    $registerPassword = trim($_POST['password']);
+    $registerConfirmPassword    = trim($_POST['confirmPassword']);
+
+    if(strlen($registerName) < 6 || strlen($registerName) > 12)
+        $errors['registerName'] = 'Your user name must be between 6-12 characters.';
+
+    if (!validEmail($registerEmail))
+        $errors['registerEmail'] = 'Your email address is invalid.';
+
+    if(strlen($registerPassword) < 6 || strlen($registerPassword) > 12)
+        $errors['registerPassword'] = 'Your password must be between 6-12 characters.';
+
+    if($registerPassword != $registerConfirmPassword)
+        $errors['registerConfirmPassword'] = 'Your passwords did not match.';
+
+    // Check to see if we have a user registered with this name address already
+    $query = 'SELECT * FROM users WHERE username = "' . mysql_real_escape_string($registerName) . '" LIMIT 1';
+    $result = mysql_query($query);
+    if(mysql_num_rows($result) == 1)
+        $errors['registerName'] = 'This user name address already exists.';
+
+    // Check to see if we have a user registered with this email address already
+    $query = 'SELECT * FROM users WHERE email = "' . mysql_real_escape_string($registerEmail) . '" LIMIT 1';
+    $result = mysql_query($query);
+    if(mysql_num_rows($result) == 1)
+        $errors['registerEmail'] = 'This email address already exists.';
+
+    if(!$errors){
+        $query = 'INSERT INTO users SET username = "' . mysql_real_escape_string($registerName) . '",
+                                                                        email = "' . mysql_real_escape_string($registerEmail) . '",
+                                                                        password = MD5("' . mysql_real_escape_string($registerPassword) . '"),
+                                                                        date_registered = "' . date('Y-m-d H:i:s') . '"';
+
+        if(!mysql_query($query)){
+            $errors['register'] = 'There was a problem registering you. Please check your details and try again.';
+        }else{
+            $query  = 'SELECT * FROM users WHERE email = "' . mysql_real_escape_string($registerEmail) . '" AND password = MD5("' . $registerPassword . '") LIMIT 1';
+            $result = mysql_query($query);
+            if(mysql_num_rows($result) == 1){
+                $user = mysql_fetch_assoc($result);
+                $query = 'UPDATE users SET session_id = "' . session_id() . '" WHERE id = ' . $user['id'] . ' LIMIT 1';
+                mysql_query($query);
+            }
+
+            header('Location: index.php');
+            echo "<script>window.location = 'index.php'</script>";
+            exit;
+        }
+    }
+
+}
+
+?>
 
 <div class="content">
 
@@ -38,38 +107,46 @@
     <div class="col-md-6">
       <div class="content login">
         <h4>Make an Account</h4>
-        <form accept-charset="UTF-8" role="form">
+        <?php if($errors['register']) print '<div class="invalid">' . $errors['register'] . '</div>'; ?>
+        <form accept-charset="UTF-8" role="form" name="registerForm" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
           <fieldset>
-            <div class="form-group">
+            <div class="form-group <?php if($errors['registerName']) echo 'has-error'; ?>">
               <div class="input-group">
                 <span class="input-group-addon"><i class="fui-user"></i></span>
-                <input class="form-control" placeholder="Username" name="username" type="text">
+                <input class="form-control" placeholder="Username" name="username" type="text" value="<?php echo htmlspecialchars($registerName); ?>">
               </div>
+              <?php if($errors['registerName']) print '<div class="invalid">' . $errors['registerName'] . '</div>'; ?>
             </div>
-            <div class="form-group">
+            <div class="form-group <?php if($errors['registerEmail']) echo 'has-error'; ?>">
               <div class="input-group">
                 <span class="input-group-addon"><i class="fui-mail"></i></span>
-                <input class="form-control" placeholder="E-mail" name="email" type="text">
+                <input class="form-control" placeholder="E-mail" name="email" type="text" value="<?php echo htmlspecialchars($registerEmail); ?>">
               </div>
+              <?php if($errors['registerEmail']) print '<div class="invalid">' . $errors['registerEmail'] . '</div>'; ?>
             </div>
-            <div class="form-group">
+            <div class="form-group <?php if($errors['registerPassword']) echo 'has-error'; ?>">
               <div class="input-group">
                 <span class="input-group-addon"><i class="fui-lock"></i></span>
                 <input class="form-control" placeholder="Password" name="password" type="password" value="">
               </div>
+              <?php if($errors['registerPassword']) print '<div class="invalid">' . $errors['registerPassword'] . '</div>'; ?>
             </div>
-            <div class="form-group">
+            <div class="form-group <?php if($errors['registerConfirmPassword']) echo 'has-error'; ?>">
               <div class="input-group">
                 <span class="input-group-addon"><i class="fui-lock"></i></span>
-                <input class="form-control" placeholder="Confirm Password" name="confirmpassword" type="password" value="">
+                <input class="form-control" placeholder="Confirm Password" name="confirmPassword" type="password" value="">
               </div>
+              <?php if($errors['registerConfirmPassword']) print '<div class="invalid">' . $errors['registerConfirmPassword'] . '</div>'; ?>
             </div>
+            <input type="hidden" name="registerSubmit" id="registerSubmit" value="true" />
             <input class="btn btn-lg btn-block btn-danger" type="submit" value="Register">
+            <!--
             <div class="col-xs-6">
 			  <label class="checkbox" for="checkbox1">
                 <input name="remember" type="checkbox" value="" id="checkbox1" data-toggle="checkbox"> Remember Me
               </label>
             </div>
+            -->
           </fieldset>
         </form>
       </div>

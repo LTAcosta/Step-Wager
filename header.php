@@ -1,3 +1,5 @@
+<?php include_once('../../stepwager_config.php'); ?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -30,9 +32,21 @@
 	    <div class="col-md-7">
           <ul class="nav nav-pills nav-justified">
             <li><a href="index.php">Home</a></li>
-            <li><a href="wagers.php">Wagers</a></li>
+            <?php if($isUserLoggedIn) print '<li><a href="wagers.php">Wagers</a></li>'; ?>
             <li><a href="leaderboard.php">Leaderboards</a></li>
-            <li><a href="account.php">Profile</a></li>
+            <?php
+            if($isUserLoggedIn){
+                print '<li class="dropdown">';
+                print '<a class="dropdown-toggle" data-toggle="dropdown" href="#">'.$_SESSION['user']['username'].' <span class="caret"></span></a>';
+                print '<ul class="dropdown-menu">';
+                print '<li><a href="account.php">Profile</a></li>';
+                print '<li class="divider"></li>';
+                print '<li><a href="logout.php">Logout</a></li>';
+                print '</ul></li>';
+            } else {
+                print '<li><a href="register.php">Sign Up</a></li>';
+            }
+            ?>
           </ul>
 		</div>
       </div>
