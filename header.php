@@ -1,4 +1,4 @@
-<?php include_once('../../stepwager_config.php'); ?>
+<?php include_once('../../private/stepwager_config.php'); ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -39,14 +39,32 @@
                 print '<li class="dropdown">';
                 print '<a class="dropdown-toggle" data-toggle="dropdown" href="#">'.$_SESSION['user']['username'].' <span class="caret"></span></a>';
                 print '<ul class="dropdown-menu">';
-                print '<li><a href="account.php">Profile</a></li>';
+                print '<li><a href="profile.php">Profile</a></li>';
+                print '<li><a href="account.php">Account</a></li>';
                 print '<li class="divider"></li>';
                 print '<li><a href="logout.php">Logout</a></li>';
                 print '</ul></li>';
             } else {
-                print '<li><a href="register.php">Sign Up</a></li>';
+                if(strpos(basename($_SERVER['PHP_SELF']), 'register') !== false){
+                    print '<li><a href="index.php">Login</a></li>';
+                } else {
+                    print '<li><a href="register.php">Sign Up</a></li>';
+                }
             }
             ?>
           </ul>
 		</div>
       </div>
+      <?php
+      if($isUserLoggedIn && (!$isFitbitSetup || $isDuplicateFitbit || $hasAccountError || ($isFitbitRequired && !$isFitbitConnected))){
+          print '<div class="dialog dialog-danger">';
+          if($isDuplicateFitbit){
+              print 'It appears there\'s already a Step Wager account linked to that Fitbit account. Please <a href="index.php?connect=true">try a different Fitbit account!</a>';
+          } elseif($hasAccountError) {
+              print 'It appears something went wrong while linking Step Wager to your Fitbit account. Please <a href="index.php?connect=true">try linking to Fitbit again!</a>';
+          } else {
+              print 'Before you can make a wager, you need to <a href="index.php?connect=true">link Step Wager to Fitbit!</a>';
+          }
+          print '</div>';
+      }
+      ?>

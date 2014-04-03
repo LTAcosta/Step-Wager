@@ -1,7 +1,8 @@
 <?php
+$isFitbitRequired = true;
 include 'header.php';
 
-if($isUserLoggedIn){
+if(!$isUserLoggedIn){
     header('Location: index.php');
     echo "<script>window.location = 'index.php'</script>";
     exit;

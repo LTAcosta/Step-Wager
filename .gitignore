@@ -16,3 +16,4 @@ Icon
 node_modules
 node_server.js
 *_notes/
+*private/

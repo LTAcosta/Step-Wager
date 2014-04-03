@@ -5,8 +5,12 @@
       <paths name="StepWager.com">
         <serverdata>
           <mappings>
-            <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/public_html/stepwager.com" local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/private" local="$PROJECT_DIR$/private" web="../../private" />
           </mappings>
+          <excludedPaths>
+            <excludedPath path="/public_html/stepwager.com/private" />
+          </excludedPaths>
         </serverdata>
       </paths>
     </serverData>
