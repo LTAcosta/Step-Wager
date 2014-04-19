@@ -87,7 +87,7 @@
 
 .footer {
 	border-top: 1px solid #e5e5e5;
-	margin-top: 20px;
+	margin-top: 30px;
 }
 
 .bottom-menu {
@@ -105,8 +105,165 @@
   text-align: center;
 }
 
-.header ul {
+.header h1 a:link {color:#E74C3C;}
+.header h1 a:visited {color:#E74C3C;}
+.header h1 a:hover {color:#EC7063;}
+.header h1 a:active {color:#E74C3C;}
+
+#nav {
   padding-bottom: 15px;
+}
+
+.nav .open > a,
+.nav .open > a:hover,
+.nav .open > a:focus {
+    background-color: #48c9b0;
+    border-color: #16a085;
+}
+
+.navbar-new {
+    margin: -6px 0px 0px 0px;
+}
+
+.nav .dropdown-toggle .caret {
+    border-bottom-color: #ffffff;
+    border-top-color: #ffffff;
+}
+
+.dropdown-arrow {
+    border-bottom-color: #1abc9c;
+    top:auto;
+    right: 5%;
+}
+
+.nav-justified > .dropdown .dropdown-menu {
+    right: 0px;
+    left: 0px;
+    border-radius: 4px !important;
+}
+
+.dropdown-menu, .dropdown-menu li > a {
+    background-color: #1abc9c;
+    color: #ffffff;
+    font-family: "Lato", Helvetica, Arial, sans-serif;
+    text-align: center;
+}
+
+.dropdown-menu .divider {
+    height: 2px;
+    background-color: #5FD0BA;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.dropdown-menu li > a:hover,
+.dropdown-menu li > a:active,
+.dropdown-menu li > a:focus {
+    background-color: #48c9b0;
+}
+
+.dropdown-menu li.active > a,
+.dropdown-menu li.selected > a {
+    background-color: #16a085;
+}
+
+.container-narrow > hr {
+    margin: 30px 0;
+}
+
+.description,
+.wager-group {
+    margin-bottom: 15px;
+}
+
+.bottom-group {
+    margin-bottom: 0px;
+}
+
+.wager-list {
+    min-height: 110px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+#new-wager {
+    text-align: right;
+}
+
+.select .btn {
+    width: 100%;
+}
+
+.select.btn-group {
+    margin-bottom: 0px;
+}
+
+.select > .dropdown-menu {
+    width: 100%;
+    border-radius: 4px !important;
+    min-height: 95px !important;
+}
+
+.select > .dropdown-menu dt {
+    border-bottom: 2px solid #5FD0BA;
+    margin-bottom: 0px;
+    margin-top: 1px;
+    padding-bottom: 1px;
+}
+
+.select > .dropdown-arrow {
+    top: 100%;
+}
+
+.btn-group.open .dropdown-toggle {
+    background-color: #48c9b0;
+}
+
+.ui-spinner-input {
+    width: 100%;
+}
+
+.wager-ico {
+    float: right;
+}
+
+.no-wagers {
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.dl-horizontal dd {
+    min-height: 30px;
+}
+
+.ui-datepicker-today > .ui-state-highlight {
+    border: 2px solid #d7dbdd;
+}
+
+@media (min-width: 768px) {
+    .container {
+        border-radius: 6px;
+    }
+
+    body {
+        background-color: #e5e5e5;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .header h1 {
+        text-align: left;
+    }
+
+    .nav-justified > .dropdown .dropdown-menu {
+        right: 1%;
+        left: auto;
+    }
+
+    .dropdown-menu, .dropdown-menu li > a {
+        text-align: left;
+    }
 }
 
 /* Customize container */
@@ -118,20 +275,18 @@
   #welcome {
 	padding-bottom: 0px;  
   }
-}
-@media (min-width: 768px) {
-  .container {
-	border-radius: 6px;
+
+  #wagers {
+      padding-right: 30px;
+      padding-left: 30px;
   }
-  
-  body {
-	background-color: #e5e5e5;
-    padding-top: 20px;
-    padding-bottom: 20px;
+
+  .wager-group {
+      margin-bottom: 0px;
   }
-  
-  .header h1 {
-	text-align: left;  
+
+    .nav-justified > .dropdown .dropdown-menu {
+      right: auto;
   }
 }
 
@@ -140,8 +295,10 @@
     padding-left: 0px;
 	padding-right: 0px;  
   }
+
+  #new-wager-form {
+      padding-left: 15px;
+      padding-right: 15px;
+  }
 }
 
-.container-narrow > hr {
-  margin: 30px 0;
-}

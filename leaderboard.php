@@ -2,53 +2,48 @@
 
 <div class="content">
   <h4>Leaderboard</h4>
-  
-  <table class="table table-striped">
-    <tr>
-      <th>Rank</th>
-      <th>Username</th> 
-      <th>Wins</th>
-	  <th>Losses</th>
-      <th>Win %</th>
-    </tr>
-    <tr>
-      <td>1</td>
-      <td>LTAcosta</td> 
-      <td>36</td>
-	  <td>5</td>
-      <td>87.8%</td>
-    </tr>
-	<tr>
-      <td>2</td>
-      <td>Matz</td> 
-      <td>23</td>
-	  <td>8</td>
-      <td>74.2%</td>
-    </tr>
-	<tr>
-      <td>3</td>
-      <td>billg</td> 
-      <td>19</td>
-	  <td>14</td>
-      <td>57.6%</td>
-    </tr>
-	<tr>
-      <td>4</td>
-      <td>CmdrTaco</td> 
-      <td>12</td>
-	  <td>16</td>
-      <td>42.9%</td>
-    </tr>
-	<tr>
-      <td>5</td>
-      <td>Rayzilla</td> 
-      <td>8</td>
-	  <td>25</td>
-      <td>24.2%</td>
-    </tr>
-  </table>
+     <?php
 
-  Leaderboard page goes here. This will be where the users can see a list of other users ranked by how many wagers those users have won. This is how we will be gamifying walking.
+     $query  = 'SELECT * FROM users ORDER BY wins DESC, losses ASC, ties DESC, id ASC LIMIT 25';
+     $result = mysqli_query($dbLink, $query);
+
+     if($result && mysqli_num_rows($result) > 0){
+         echo '<table class="table table-striped">';
+         echo '<tr>';
+         echo '<th>Rank</th>';
+         echo '<th>Username</th>';
+         echo '<th>Wins</th>';
+         echo '<th>Losses</th>';
+         echo '<th>Ties</th>';
+         echo '<th>Win %</th>';
+         echo '</tr>';
+
+         $rank = 0;
+
+         while ($row = mysqli_fetch_array($result)){
+             $rank += 1;
+             $totalwagers = $row['wins'] + $row['losses'];
+             $percentage = 0;
+             if ($totalwagers > 0){
+                 $percentage = $row['wins'] / $totalwagers * 100;
+             }
+             $percentageText = number_format((float)$percentage, 1, '.', '') . '%';
+
+             echo '<tr>';
+             echo '<td>', $rank, '</td>';
+             echo '<td><a href="profile.php?u=', $row['username'], '">', $row['username'], '</a></td>';
+             echo '<td>', $row['wins'], '</td>';
+             echo '<td>', $row['losses'], '</td>';
+             echo '<td>', $row['ties'], '</td>';
+             echo '<td>', $percentageText, '</td>';
+             echo '</tr>';
+         }
+
+         echo '</table>';
+     } else {
+         echo 'There seems to be an issue retrieving the current leaderboard. Check back again later!';
+     }
+     ?>
 
 </div>
 

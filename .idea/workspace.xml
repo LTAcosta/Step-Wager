@@ -2,106 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="160c08c0-2731-47cf-8f82-94e84d5a314b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OAuth/Common/Http/Client/AbstractClient.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OAuth/Common/Service/AbstractService.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OAuth/OAuth1/Service/AbstractService.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OAuth/OAuth2/Service/AbstractService.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OAuth/Common/Token/AbstractToken.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Fitbit/ActivityGateway.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Fitbit/ActivityTimeSeriesGateway.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OAuth/OAuth2/Service/Amazon.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Fitbit/ApiGatewayFactory.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Fitbit/AuthenticationGateway.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OAuth/Common/Storage/Exception/AuthorizationStateNotFoundException.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OAuth/Common/AutoLoader.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OAuth/OAuth1/Service/BitBucket.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OAuth/OAuth2/Service/Bitly.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Fitbit/BodyGateway.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Fitbit/BodyTimeSeriesGateway.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OAuth/OAuth2/Service/Box.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OAuth/Common/Http/Client/ClientInterface.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OAuth/Common/Consumer/Credentials.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OAuth/Common/Consumer/CredentialsInterface.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OAuth/Common/Http/Client/CurlClient.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OAuth/OAuth2/Service/Dailymotion.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OAuth/OAuth2/Service/Dropbox.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Fitbit/EndpointGateway.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OAuth/OAuth1/Service/Etsy.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Fitbit/Exception.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OAuth/Common/Exception/Exception.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OAuth/Common/Token/Exception/ExpiredTokenException.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OAuth/OAuth2/Service/Facebook.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OAuth/OAuth1/Service/FitBit.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OAuth/OAuth1/Service/Flickr.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Fitbit/FoodGateway.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Fitbit/FoodTimeSeriesGateway.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OAuth/OAuth2/Service/Foursquare.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OAuth/OAuth2/Service/GitHub.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OAuth/OAuth2/Service/Google.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OAuth/OAuth2/Service/Harvest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OAuth/OAuth2/Service/Heroku.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OAuth/OAuth2/Service/Instagram.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OAuth/OAuth2/Service/Exception/InvalidAuthorizationStateException.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OAuth/OAuth2/Service/Exception/InvalidScopeException.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OAuth/OAuth2/Service/Linkedin.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OAuth/OAuth2/Service/Mailchimp.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OAuth/Common/Storage/Memory.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OAuth/OAuth2/Service/Microsoft.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OAuth/OAuth2/Service/Exception/MissingRefreshTokenException.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OAuth/OAuth2/Service/Paypal.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OAuth/OAuth2/Service/Pocket.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Fitbit/RateLimiting.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OAuth/OAuth2/Service/Reddit.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OAuth/Common/Storage/Redis.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OAuth/OAuth2/Service/RunKeeper.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OAuth/OAuth2/Service/Salesforce.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OAuth/ServiceFactory.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OAuth/Common/Service/ServiceInterface.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OAuth/OAuth1/Service/ServiceInterface.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OAuth/OAuth2/Service/ServiceInterface.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OAuth/Common/Storage/Session.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OAuth/OAuth1/Signature/Signature.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OAuth/OAuth1/Signature/SignatureInterface.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Fitbit/SleepGateway.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Fitbit/SleepTimeSeriesGateway.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OAuth/OAuth2/Service/SoundCloud.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OAuth/OAuth1/Token/StdOAuth1Token.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OAuth/OAuth2/Token/StdOAuth2Token.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OAuth/Common/Storage/Exception/StorageException.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OAuth/Common/Http/Client/StreamClient.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OAuth/Common/Storage/SymfonySession.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Fitbit/TimeGateway.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Fitbit/TimeSeriesEndpointGateway.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OAuth/Common/Token/TokenInterface.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OAuth/OAuth1/Token/TokenInterface.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OAuth/OAuth2/Token/TokenInterface.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OAuth/Common/Storage/Exception/TokenNotFoundException.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OAuth/Common/Http/Exception/TokenResponseException.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OAuth/Common/Storage/TokenStorageInterface.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OAuth/OAuth1/Service/Tumblr.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OAuth/OAuth1/Service/Twitter.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OAuth/OAuth1/Signature/Exception/UnsupportedHashAlgorithmException.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OAuth/Common/Http/Uri/Uri.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OAuth/Common/Http/Uri/UriFactory.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OAuth/Common/Http/Uri/UriFactoryInterface.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OAuth/Common/Http/Uri/UriInterface.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Fitbit/UserGateway.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OAuth/OAuth2/Service/Vkontakte.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Fitbit/WaterGateway.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OAuth/OAuth1/Service/Xing.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OAuth/OAuth2/Service/Yammer.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OAuth/bootstrap.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dashboard.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/php.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/phpinfo.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/profile.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/new.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/stepwager.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wager.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/account.php" afterPath="$PROJECT_DIR$/account.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/deployment.xml" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dashboard.php" afterPath="$PROJECT_DIR$/dashboard.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/footer.php" afterPath="$PROJECT_DIR$/footer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/functions.php" afterPath="$PROJECT_DIR$/functions.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/header.php" afterPath="$PROJECT_DIR$/header.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/leaderboard.php" afterPath="$PROJECT_DIR$/leaderboard.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login.php" afterPath="$PROJECT_DIR$/login.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logout.php" afterPath="$PROJECT_DIR$/logout.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/profile.php" afterPath="$PROJECT_DIR$/profile.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/register.php" afterPath="$PROJECT_DIR$/register.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wagers.php" afterPath="$PROJECT_DIR$/wagers.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -129,7 +43,7 @@
       <file leaf-file-name="stepwager_config.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/private/stepwager_config.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="96" column="39" selection-start="3759" selection-end="3759" vertical-scroll-proportion="-62.76923" vertical-offset="0" max-vertical-offset="2788">
+            <state line="141" column="4" selection-start="4992" selection-end="5266" vertical-scroll-proportion="-15.692307" vertical-offset="1989" max-vertical-offset="3315">
               <folding />
             </state>
           </provider>
@@ -138,27 +52,16 @@
       <file leaf-file-name="profile.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/profile.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="71" selection-start="162" selection-end="162" vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="255">
+            <state line="50" column="49" selection-start="1550" selection-end="1550" vertical-scroll-proportion="-14.615385" vertical-offset="470" max-vertical-offset="1581">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="24" selection-start="143" selection-end="143" vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="255">
-              <folding>
-                <marker date="1396480777405" expanded="true" signature="80:110" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="login.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/login.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="1" selection-start="1384" selection-end="1384" vertical-scroll-proportion="0.9413793" vertical-offset="117" max-vertical-offset="2499">
+            <state line="71" column="62" selection-start="3557" selection-end="3577" vertical-scroll-proportion="-15.461538" vertical-offset="805" max-vertical-offset="2244">
               <folding />
             </state>
           </provider>
@@ -167,35 +70,39 @@
       <file leaf-file-name="dashboard.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dashboard.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="19" selection-start="33" selection-end="48" vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="374">
+            <state line="18" column="75" selection-start="568" selection-end="593" vertical-scroll-proportion="-11.769231" vertical-offset="0" max-vertical-offset="1156">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/header.php">
+      <file leaf-file-name="stepwager.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/stepwager.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="17" selection-start="2061" selection-end="2061" vertical-scroll-proportion="-17.653847" vertical-offset="408" max-vertical-offset="1292">
+            <state line="47" column="59" selection-start="1250" selection-end="1250" vertical-scroll-proportion="0.0" vertical-offset="544" max-vertical-offset="2142">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="register.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/register.php">
+      <file leaf-file-name="leaderboard.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/leaderboard.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="0" selection-start="59" selection-end="185" vertical-scroll-proportion="-1.9615384" vertical-offset="17" max-vertical-offset="2839">
+            <state line="22" column="9" selection-start="604" selection-end="647" vertical-scroll-proportion="-14.384615" vertical-offset="0" max-vertical-offset="935">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="wagers.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wagers.php">
+      <file leaf-file-name="wager.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wager.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="21" selection-start="208" selection-end="208" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="374">
-              <folding />
+            <state line="84" column="33" selection-start="2633" selection-end="2633" vertical-scroll-proportion="0.6505824" vertical-offset="1037" max-vertical-offset="2312">
+              <folding>
+                <marker date="1397869752178" expanded="true" signature="2829:2939" placeholder="..." />
+                <marker date="1397869752178" expanded="true" signature="2880:2939" placeholder="..." />
+                <marker date="1397869752178" expanded="true" signature="2911:2939" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -203,8 +110,39 @@
       <file leaf-file-name="account.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/account.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="1" selection-start="156" selection-end="156" vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="374">
+            <state line="14" column="17" selection-start="286" selection-end="286" vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="544">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="new.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/new.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="110" column="78" selection-start="4684" selection-end="4684" vertical-scroll-proportion="-6.9607844" vertical-offset="1515" max-vertical-offset="4437">
+              <folding>
+                <marker date="1397869462822" expanded="true" signature="5400:5465" placeholder="..." />
+                <marker date="1397869462822" expanded="true" signature="6099:6173" placeholder="..." />
+                <marker date="1397869462822" expanded="true" signature="6361:6693" placeholder="..." />
+                <marker date="1397869462822" expanded="true" signature="6421:6693" placeholder="..." />
+                <marker date="1397869462822" expanded="true" signature="9214:9289" placeholder="..." />
+                <marker date="1397869462822" expanded="true" signature="9466:9625" placeholder="..." />
+                <marker date="1397869462822" expanded="true" signature="9536:9625" placeholder="..." />
+                <marker date="1397869462822" expanded="true" signature="10010:10041" placeholder="..." />
+                <marker date="1397869462822" expanded="true" signature="10562:10636" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="footer.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/footer.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="43" selection-start="1106" selection-end="1106" vertical-scroll-proportion="-16.346153" vertical-offset="0" max-vertical-offset="578">
+              <folding>
+                <marker date="1397842949611" expanded="true" signature="25:250" placeholder="..." />
+                <marker date="1397842949611" expanded="true" signature="51:237" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -222,20 +160,26 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/register.php" />
         <option value="$PROJECT_DIR$/phpinfo.php" />
-        <option value="$PROJECT_DIR$/logout.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/functions.php" />
         <option value="$PROJECT_DIR$/fitbitlogin.php" />
-        <option value="$PROJECT_DIR$/wagers.php" />
-        <option value="$PROJECT_DIR$/private/stepwager_config.php" />
-        <option value="$PROJECT_DIR$/account.php" />
-        <option value="$PROJECT_DIR$/profile.php" />
-        <option value="$PROJECT_DIR$/dashboard.php" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/header.php" />
+        <option value="$PROJECT_DIR$/logout.php" />
+        <option value="$PROJECT_DIR$/leaderboard.php" />
+        <option value="$PROJECT_DIR$/register.php" />
         <option value="$PROJECT_DIR$/login.php" />
+        <option value="$PROJECT_DIR$/footer.php" />
+        <option value="$PROJECT_DIR$/header.php" />
+        <option value="$PROJECT_DIR$/private/stepwager_config.php" />
+        <option value="$PROJECT_DIR$/functions.php" />
+        <option value="$PROJECT_DIR$/css/style.css" />
+        <option value="$PROJECT_DIR$/js/stepwager.js" />
+        <option value="$PROJECT_DIR$/wagers.php" />
+        <option value="$PROJECT_DIR$/dashboard.php" />
+        <option value="$PROJECT_DIR$/profile.php" />
+        <option value="$PROJECT_DIR$/account.php" />
+        <option value="$PROJECT_DIR$/new.php" />
+        <option value="$PROJECT_DIR$/wager.php" />
       </list>
     </option>
   </component>
@@ -281,7 +225,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -314,20 +257,36 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StepWager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StepWager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="Configurable.PHP" />
+    <property name="options.lastSelected" value="editor.preferences.appearance" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/private" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../CryptoBotAI" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="FullScreen" value="false" />
+    <property name="SearchEverywhereHistory" value="" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -394,26 +353,47 @@
     <frame x="-8" y="22" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32334048" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30235043" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33940044" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32334048" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32996634" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17891374" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12619808" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32334048" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32996634" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33940044" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32264957" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33940044" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32334048" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32996634" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18423855" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -432,203 +412,109 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Fitbit/ApiGatewayFactory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="225" column="20" selection-start="5196" selection-end="5196" vertical-scroll-proportion="0.0" vertical-offset="3825" max-vertical-offset="4981">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="22" selection-start="1091" selection-end="1091" vertical-scroll-proportion="0.0" vertical-offset="969" max-vertical-offset="2584">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="0" selection-start="1945" selection-end="1945" vertical-scroll-proportion="0.0" vertical-offset="692" max-vertical-offset="1326">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Fitbit/AuthenticationGateway.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1173">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/phpinfo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="18" selection-start="18" selection-end="18" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/register.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="29" selection-start="35" selection-end="35" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2839">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wagers.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="9" selection-start="153" selection-end="153" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="357">
-          <folding />
-        </state>
+        <state line="6" column="9" selection-start="153" selection-end="153" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="357" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="95" selection-start="2044" selection-end="2044" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1105">
-          <folding />
-        </state>
+        <state line="55" column="95" selection-start="2044" selection-end="2044" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1105" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="22" selection-start="1091" selection-end="1091" vertical-scroll-proportion="0.0" vertical-offset="969" max-vertical-offset="2584">
-          <folding />
-        </state>
+        <state line="77" column="22" selection-start="1091" selection-end="1091" vertical-scroll-proportion="0.0" vertical-offset="969" max-vertical-offset="2584" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/functions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="0" selection-start="1945" selection-end="1945" vertical-scroll-proportion="0.0" vertical-offset="714" max-vertical-offset="1326">
-          <folding />
-        </state>
+        <state line="69" column="0" selection-start="1945" selection-end="1945" vertical-scroll-proportion="0.0" vertical-offset="714" max-vertical-offset="1326" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Fitbit/AuthenticationGateway.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1173">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1173" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/phpinfo.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="18" selection-start="18" selection-end="18" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
-          <folding />
-        </state>
+        <state line="0" column="18" selection-start="18" selection-end="18" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="21" selection-start="71" selection-end="71" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2329">
-          <folding>
-            <marker date="1396480777405" expanded="true" signature="80:110" placeholder="..." />
-          </folding>
-        </state>
+        <state line="2" column="21" selection-start="71" selection-end="71" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2329" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/logout.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="30" selection-start="36" selection-end="36" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="238">
-          <folding />
-        </state>
+        <state line="1" column="30" selection-start="36" selection-end="36" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="238" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/register.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="104" column="18" selection-start="4175" selection-end="4175" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="2346">
-          <folding />
-        </state>
+        <state line="104" column="18" selection-start="4175" selection-end="4175" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="2346" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="21" selection-start="71" selection-end="71" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2329">
-          <folding>
-            <marker date="1396480777405" expanded="true" signature="80:110" placeholder="..." />
-          </folding>
-        </state>
+        <state line="2" column="21" selection-start="71" selection-end="71" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2329" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/logout.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="30" selection-start="36" selection-end="36" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="238">
-          <folding />
-        </state>
+        <state line="1" column="30" selection-start="36" selection-end="36" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="238" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/register.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="104" column="18" selection-start="4175" selection-end="4175" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="2346">
-          <folding />
-        </state>
+        <state line="104" column="18" selection-start="4175" selection-end="4175" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="2346" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="30" selection-start="58" selection-end="58" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2329">
-          <folding>
-            <marker date="1396480777405" expanded="true" signature="80:110" placeholder="..." />
-          </folding>
-        </state>
+        <state line="2" column="30" selection-start="58" selection-end="58" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2329" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/logout.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="30" selection-start="36" selection-end="36" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="238">
-          <folding />
-        </state>
+        <state line="1" column="30" selection-start="36" selection-end="36" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="238" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/register.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="0" selection-start="1592" selection-end="1592" vertical-scroll-proportion="0.0" vertical-offset="561" max-vertical-offset="2312">
-          <folding />
-        </state>
+        <state line="33" column="0" selection-start="1592" selection-end="1592" vertical-scroll-proportion="0.0" vertical-offset="561" max-vertical-offset="2312" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="30" selection-start="58" selection-end="58" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2329">
-          <folding>
-            <marker date="1396480777405" expanded="true" signature="80:110" placeholder="..." />
-          </folding>
-        </state>
+        <state line="2" column="30" selection-start="58" selection-end="58" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2329" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/logout.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="30" selection-start="36" selection-end="36" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="238">
-          <folding />
-        </state>
+        <state line="1" column="30" selection-start="36" selection-end="36" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="238" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/register.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="0" selection-start="1592" selection-end="1592" vertical-scroll-proportion="0.0" vertical-offset="561" max-vertical-offset="2312">
-          <folding />
-        </state>
+        <state line="33" column="0" selection-start="1592" selection-end="1592" vertical-scroll-proportion="0.0" vertical-offset="561" max-vertical-offset="2312" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="30" selection-start="58" selection-end="58" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2329">
-          <folding>
-            <marker date="1396480777405" expanded="true" signature="80:110" placeholder="..." />
-          </folding>
-        </state>
+        <state line="2" column="30" selection-start="58" selection-end="58" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2329" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/logout.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="30" selection-start="36" selection-end="36" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="238">
-          <folding />
-        </state>
+        <state line="1" column="30" selection-start="36" selection-end="36" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="238" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/register.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="47" selection-start="841" selection-end="841" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="2312">
-          <folding />
-        </state>
+        <state line="21" column="47" selection-start="841" selection-end="841" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="2312" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Fitbit/ActivityTimeSeriesGateway.php">
@@ -651,147 +537,208 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3128" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="22" selection-start="1091" selection-end="1091" vertical-scroll-proportion="0.0" vertical-offset="969" max-vertical-offset="2584">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logout.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="58" selection-end="58" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="221">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="9" selection-start="194" selection-end="194" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
-          <folding />
-        </state>
+        <state line="18" column="9" selection-start="194" selection-end="194" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Fitbit/ApiGatewayFactory.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="225" column="20" selection-start="5196" selection-end="5196" vertical-scroll-proportion="0.0" vertical-offset="3825" max-vertical-offset="4981">
-          <folding />
-        </state>
+        <state line="225" column="20" selection-start="5196" selection-end="5196" vertical-scroll-proportion="0.0" vertical-offset="3825" max-vertical-offset="4981" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Fitbit/UserGateway.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="20" selection-start="480" selection-end="480" vertical-scroll-proportion="0.0" vertical-offset="953" max-vertical-offset="4573">
-          <folding />
-        </state>
+        <state line="23" column="20" selection-start="480" selection-end="480" vertical-scroll-proportion="0.0" vertical-offset="953" max-vertical-offset="4573" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Fitbit/Exception.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="25" selection-start="97" selection-end="97" vertical-scroll-proportion="0.20481928" vertical-offset="0" max-vertical-offset="581">
-          <folding>
-            <element signature="e#6#51#0" expanded="false" />
-          </folding>
-        </state>
+        <state line="7" column="25" selection-start="97" selection-end="97" vertical-scroll-proportion="0.20481928" vertical-offset="0" max-vertical-offset="581" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Fitbit/RateLimiting.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="16" selection-start="88" selection-end="88" vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="493">
-          <folding />
-        </state>
+        <state line="8" column="16" selection-start="88" selection-end="88" vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="493" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Fitbit/AuthenticationGateway.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1173">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1173" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Fitbit/EndpointGateway.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="109" column="8" selection-start="2527" selection-end="2608" vertical-scroll-proportion="-12.423077" vertical-offset="1530" max-vertical-offset="2176" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/phpinfo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="18" selection-start="18" selection-end="18" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="582" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="2" selection-start="247" selection-end="247" vertical-scroll-proportion="0.20446736" vertical-offset="0" max-vertical-offset="582" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="24" selection-start="143" selection-end="143" vertical-scroll-proportion="0.19729207" vertical-offset="0" max-vertical-offset="517" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/application.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="158" column="55" selection-start="4919" selection-end="4919" vertical-scroll-proportion="1.3770764" vertical-offset="1840" max-vertical-offset="3808" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leaderboard.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="9" selection-start="604" selection-end="647" vertical-scroll-proportion="-14.384615" vertical-offset="0" max-vertical-offset="935">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="43" selection-start="1106" selection-end="1106" vertical-scroll-proportion="-16.346153" vertical-offset="0" max-vertical-offset="578">
+          <folding>
+            <marker date="1397842949611" expanded="true" signature="25:250" placeholder="..." />
+            <marker date="1397842949611" expanded="true" signature="51:237" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/functions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="1" selection-start="1919" selection-end="1919" vertical-scroll-proportion="-43.153847" vertical-offset="0" max-vertical-offset="1258">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Fitbit/EndpointGateway.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="109" column="8" selection-start="2527" selection-end="2608" vertical-scroll-proportion="-12.423077" vertical-offset="1530" max-vertical-offset="2176">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/phpinfo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="18" selection-start="18" selection-end="18" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="580">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/profile.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="71" selection-start="162" selection-end="162" vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="255">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/private/stepwager_config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="39" selection-start="3759" selection-end="3759" vertical-scroll-proportion="-62.76923" vertical-offset="0" max-vertical-offset="2788">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="24" selection-start="143" selection-end="143" vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="255">
+        <state line="94" column="34" selection-start="2913" selection-end="2913" vertical-scroll-proportion="-19.192308" vertical-offset="1099" max-vertical-offset="1751">
           <folding>
-            <marker date="1396480777405" expanded="true" signature="80:110" placeholder="..." />
+            <marker date="1397858585555" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..users..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="240" column="21" selection-start="3694" selection-end="3694" vertical-scroll-proportion="0.0" vertical-offset="2840" max-vertical-offset="5270">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="17" selection-start="2061" selection-end="2061" vertical-scroll-proportion="-17.653847" vertical-offset="408" max-vertical-offset="1292">
+        <state line="73" column="66" selection-start="2818" selection-end="2818" vertical-scroll-proportion="-13.653846" vertical-offset="886" max-vertical-offset="1513">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wagers.php">
+    <entry file="file://$PROJECT_DIR$/js/stepwager.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="21" selection-start="208" selection-end="208" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="374">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/account.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="1" selection-start="156" selection-end="156" vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="374">
+        <state line="47" column="59" selection-start="1250" selection-end="1250" vertical-scroll-proportion="0.0" vertical-offset="544" max-vertical-offset="2142">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/register.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="59" selection-end="185" vertical-scroll-proportion="-1.9615384" vertical-offset="17" max-vertical-offset="2839">
-          <folding />
+        <state line="14" column="3" selection-start="267" selection-end="336" vertical-scroll-proportion="36.692307" vertical-offset="1192" max-vertical-offset="2686">
+          <folding>
+            <marker date="1397755205000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1397755205000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1397755205000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1397755205000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1397755205000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1397755205000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1397755205000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1397755205000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1397755205000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1397755205000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1397755205000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1397755205000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1397755205000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1397755205000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1397755205000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1397755205000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1397755205000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1397755205000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1397755205000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1397755205000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1397755205000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1397755205000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1397755205000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1397755205000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1397755205000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dashboard.php">
+    <entry file="file://$PROJECT_DIR$/wagers.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="19" selection-start="33" selection-end="48" vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="374">
+        <state line="208" column="6" selection-start="11347" selection-end="11552" vertical-scroll-proportion="-13.461538" vertical-offset="3186" max-vertical-offset="3774">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="1" selection-start="1384" selection-end="1384" vertical-scroll-proportion="0.9413793" vertical-offset="117" max-vertical-offset="2499">
+        <state line="71" column="62" selection-start="3557" selection-end="3577" vertical-scroll-proportion="-15.461538" vertical-offset="805" max-vertical-offset="2244">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="75" selection-start="568" selection-end="593" vertical-scroll-proportion="-11.769231" vertical-offset="0" max-vertical-offset="1156">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/account.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="17" selection-start="286" selection-end="286" vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="544">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/new.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="110" column="78" selection-start="4684" selection-end="4684" vertical-scroll-proportion="-6.9607844" vertical-offset="1515" max-vertical-offset="4437">
+          <folding>
+            <marker date="1397869462822" expanded="true" signature="5400:5465" placeholder="..." />
+            <marker date="1397869462822" expanded="true" signature="6099:6173" placeholder="..." />
+            <marker date="1397869462822" expanded="true" signature="6361:6693" placeholder="..." />
+            <marker date="1397869462822" expanded="true" signature="6421:6693" placeholder="..." />
+            <marker date="1397869462822" expanded="true" signature="9214:9289" placeholder="..." />
+            <marker date="1397869462822" expanded="true" signature="9466:9625" placeholder="..." />
+            <marker date="1397869462822" expanded="true" signature="9536:9625" placeholder="..." />
+            <marker date="1397869462822" expanded="true" signature="10010:10041" placeholder="..." />
+            <marker date="1397869462822" expanded="true" signature="10562:10636" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/profile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="49" selection-start="1550" selection-end="1550" vertical-scroll-proportion="-14.615385" vertical-offset="470" max-vertical-offset="1581">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/private/stepwager_config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="141" column="4" selection-start="4992" selection-end="5266" vertical-scroll-proportion="-15.692307" vertical-offset="1989" max-vertical-offset="3315">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="84" column="33" selection-start="2633" selection-end="2633" vertical-scroll-proportion="0.6505824" vertical-offset="1037" max-vertical-offset="2312">
+          <folding>
+            <marker date="1397869752178" expanded="true" signature="2829:2939" placeholder="..." />
+            <marker date="1397869752178" expanded="true" signature="2880:2939" placeholder="..." />
+            <marker date="1397869752178" expanded="true" signature="2911:2939" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>

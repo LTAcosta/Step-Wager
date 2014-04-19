@@ -66,4 +66,33 @@ function validEmail($email)
     return $isValid;
 }
 
+function Calculate_Wins($fitbit_id){
+    global $isUserLoggedIn, $dbLink;
+
+    if (!$fitbit_id || !$isUserLoggedIn || !$dbLink)
+        return;
+
+    $wins = 0;
+    $losses = 0;
+    $ties = 0;
+
+    $query  = 'SELECT * FROM wagers WHERE (creator_id = "'.mysqli_real_escape_string($dbLink, $fitbit_id).'" OR opponent_id = "'.mysqli_real_escape_string($dbLink, $fitbit_id).'") AND winner IS NOT NULL';
+    $result = mysqli_query($dbLink, $query);
+
+    if($result && mysqli_num_rows($result) > 0){
+        while ($wager = mysqli_fetch_array($result)){
+            if ($wager['winner'] == $fitbit_id){
+                $wins += 1;
+            } else if ($wager['winner'] == 'both') {
+                $ties += 1;
+            } else {
+                $losses += 1;
+            }
+        }
+    }
+
+    $query = 'UPDATE users SET wins="'. $wins .'", losses="'. $losses .'", ties="'. $ties .'" WHERE fitbit_id = "' . mysqli_real_escape_string($dbLink, $fitbit_id) . '"';
+    mysqli_query($dbLink, $query);
+}
+
 ?>

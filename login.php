@@ -18,12 +18,12 @@ if(isset($_POST['loginSubmit']) && $_POST['loginSubmit'] == 'true'){
         $errors['loginPassword'] = 'Your password must be between 6-12 characters.';
 
     if(!$errors){
-        $query  = 'SELECT * FROM users WHERE email = "' . mysql_real_escape_string($loginEmail) . '" AND password = MD5("' . $loginPassword . '") LIMIT 1';
-        $result = mysql_query($query);
-        if(mysql_num_rows($result) == 1){
-            $user = mysql_fetch_assoc($result);
+        $query  = 'SELECT * FROM users WHERE email = "' . mysqli_real_escape_string($dbLink, $loginEmail) . '" AND password = MD5("' . $loginPassword . '") LIMIT 1';
+        $result = mysqli_query($dbLink, $query);
+        if(mysqli_num_rows($result) == 1){
+            $user = mysqli_fetch_assoc($result);
             $query = 'UPDATE users SET session_id = "' . session_id() . '" WHERE id = ' . $user['id'] . ' LIMIT 1';
-            mysql_query($query);
+            mysqli_query($dbLink, $query);
             header('Location: index.php');
             echo "<script>window.location = 'index.php'</script>";
             exit;
@@ -71,12 +71,7 @@ if($isUserLoggedIn){
                             <input type="hidden" name="loginSubmit" id="loginSubmit" value="true" />
                             <input class="btn btn-lg btn-block btn-primary" type="submit" value="Login">
                             <!--
-                            <div class="col-xs-6">
-                                <label class="checkbox" for="checkbox1">
-                                    <input name="remember" type="checkbox" value="" id="checkbox1" data-toggle="checkbox"> Remember Me
-                                </label>
-                            </div>
-                            <div class="col-xs-6">
+                            <div class="col-xs-12">
                                 <a href="" class="checkbox" id="forgotpass">Forgot Password?</a>
                             </div>
                             -->
@@ -127,16 +122,6 @@ if($isUserLoggedIn){
             </div>
         </div>
 
-        Homepage goes here. There will be 2 versions of this page depending on whether or not the user is logged in.<br><br>
-
-        When logged out: List the purpose and features of this site. Show a login/register button.<br><br>
-
-        When logged in, show a dashboard with an overview of their wagers and ranking.
-
     </div>
-
-    <script>
-        $(':checkbox').checkbox();
-    </script>
 
 <?php include 'footer.php' ?>

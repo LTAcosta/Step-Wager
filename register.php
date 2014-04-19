@@ -21,6 +21,9 @@ if(isset($_POST['registerSubmit']) && $_POST['registerSubmit'] == 'true'){
     if(strlen($registerName) < 6 || strlen($registerName) > 12)
         $errors['registerName'] = 'Your user name must be between 6-12 characters.';
 
+    if(!ctype_alnum ($registerName))
+        $errors['registerName'] = 'Your user name must only contain letters and numbers.';
+
     if (!validEmail($registerEmail))
         $errors['registerEmail'] = 'Your email address is invalid.';
 
@@ -31,32 +34,32 @@ if(isset($_POST['registerSubmit']) && $_POST['registerSubmit'] == 'true'){
         $errors['registerConfirmPassword'] = 'Your passwords did not match.';
 
     // Check to see if we have a user registered with this name address already
-    $query = 'SELECT * FROM users WHERE username = "' . mysql_real_escape_string($registerName) . '" LIMIT 1';
-    $result = mysql_query($query);
-    if(mysql_num_rows($result) == 1)
+    $query = 'SELECT * FROM users WHERE username = "' . mysqli_real_escape_string($dbLink, $registerName) . '" LIMIT 1';
+    $result = mysqli_query($dbLink, $query);
+    if(mysqli_num_rows($result) >= 1)
         $errors['registerName'] = 'This user name address already exists.';
 
     // Check to see if we have a user registered with this email address already
-    $query = 'SELECT * FROM users WHERE email = "' . mysql_real_escape_string($registerEmail) . '" LIMIT 1';
-    $result = mysql_query($query);
-    if(mysql_num_rows($result) == 1)
+    $query = 'SELECT * FROM users WHERE email = "' . mysqli_real_escape_string($dbLink, $registerEmail) . '" LIMIT 1';
+    $result = mysqli_query($dbLink, $query);
+    if(mysqli_num_rows($result) >= 1)
         $errors['registerEmail'] = 'This email address already exists.';
 
     if(!$errors){
-        $query = 'INSERT INTO users SET username = "' . mysql_real_escape_string($registerName) . '",
-                                                                        email = "' . mysql_real_escape_string($registerEmail) . '",
-                                                                        password = MD5("' . mysql_real_escape_string($registerPassword) . '"),
+        $query = 'INSERT INTO users SET username = "' . mysqli_real_escape_string($dbLink, $registerName) . '",
+                                                                        email = "' . mysqli_real_escape_string($dbLink, $registerEmail) . '",
+                                                                        password = MD5("' . mysqli_real_escape_string($dbLink, $registerPassword) . '"),
                                                                         date_registered = "' . date('Y-m-d H:i:s') . '"';
 
-        if(!mysql_query($query)){
+        if(!mysqli_query($dbLink, $query)){
             $errors['register'] = 'There was a problem registering you. Please check your details and try again.';
         }else{
-            $query  = 'SELECT * FROM users WHERE email = "' . mysql_real_escape_string($registerEmail) . '" AND password = MD5("' . $registerPassword . '") LIMIT 1';
-            $result = mysql_query($query);
-            if(mysql_num_rows($result) == 1){
-                $user = mysql_fetch_assoc($result);
+            $query  = 'SELECT * FROM users WHERE email = "' . mysqli_real_escape_string($dbLink, $registerEmail) . '" AND password = MD5("' . $registerPassword . '") LIMIT 1';
+            $result = mysqli_query($dbLink, $query);
+            if(mysqli_num_rows($result) == 1){
+                $user = mysqli_fetch_assoc($result);
                 $query = 'UPDATE users SET session_id = "' . session_id() . '" WHERE id = ' . $user['id'] . ' LIMIT 1';
-                mysql_query($query);
+                mysqli_query($dbLink, $query);
             }
 
             header('Location: index.php');
@@ -140,23 +143,11 @@ if(isset($_POST['registerSubmit']) && $_POST['registerSubmit'] == 'true'){
             </div>
             <input type="hidden" name="registerSubmit" id="registerSubmit" value="true" />
             <input class="btn btn-lg btn-block btn-danger" type="submit" value="Register">
-            <!--
-            <div class="col-xs-6">
-			  <label class="checkbox" for="checkbox1">
-                <input name="remember" type="checkbox" value="" id="checkbox1" data-toggle="checkbox"> Remember Me
-              </label>
-            </div>
-            -->
           </fieldset>
         </form>
       </div>
     </div>
   </div>
-
 </div>
-
-<script>
-  $(':checkbox').checkbox();
-</script>
 
 <?php include 'footer.php' ?>
